@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>PositionAttributeLayout</title>
+
+        <style>
+        body
+        {
+            background-color: gray;
+        }
+         
+        h1
+        {
+            background-color: coral;
+            width: 100%;
+            height: auto;
+        }
+
+        p
+        {
+            background-color: cyan;
+            width: 100%;
+            height: auto;
+        }
+ 
+        .main
+        {
+            background-color:gold;
+            width: 300px;
+            height: 120px;
+        }
+
+        .static
+        {
+            position: static;
+            width: 200px;
+            height: 180px;
+            background-color:peru;
+            padding-top: 12px;
+            margin-top: 12px;
+            margin-left: 12px;
+            /* margin-bottom: 20px; */
+            border-style: dashed;
+        }
+
+        .relative
+        {
+            position:absolute;
+            width: 350px;
+            height: 80px;
+            background-color: blueviolet;
+            /* top:30px; */
+            padding-top:20px;
+            margin-top: 10px;
+            left: 20px;
+        }
+
+        .relative1
+        {
+            position: relative;
+            background-color: darkgoldenrod;
+            width: 300px;
+            height: 50px;
+        }
+
+        .relative2
+        {
+            position: relative;
+            top:-20px;
+            left:30px;
+            background-color: aqua;
+            width:500px;
+        }
+        .fixed
+        {
+            position: fixed;
+            bottom:0px;
+            right:0px;
+            width:200px;
+            background-color:coral;
+        }
+
+        .absolute
+        {
+            position: absolute;
+            /* top: 120px; */
+            width: 300px;
+            height: 60px;
+            background-color: deeppink
+        }
+
+        </style>
+    </head>
+
+    <body>
+        <h1>My CSS Demo Page</h1>
+        <p>Hello World! This is my thoughts</p>
+        <div class="main">
+            div 是一个标准的块级元素。一个块级元素会新开始一行并且尽可能撑满容器。
+            其他常用的块级元素包括 p 、 form 和HTML5中的新元素： header 、 footer 、 section 等等。
+        </div>
+
+        <div class="static">
+            这是static。static 是默认值。任意 position: static; 的元素不会被特殊的定位。
+            一个 static 元素表示它不会被“positioned”，一个 position 属性被设置为其他值的元素表示它会被“positioned”。
+        </div>
+
+        <div class="relative">
+            这是relative。这个元素是相对定位的。如果它是 position: static; ，那么它的绝对定位子元素会跳过它直接相对于body元素定位。
+        </div>
+
+        <div class="relative1">
+            这是relative1. relative 表现的和 static 一样，除非你添加了一些额外的属性。
+        </div>
+
+        <div class="relative2">
+            这是relative2. 在一个相对定位（position属性的值为relative）的元素上设置 top 、 right 、 bottom 和 left 属性会使其偏离其正常位置。
+            其他的元素的位置则不会受该元素的影响发生位置改变来弥补它偏离后剩下的空隙。
+        </div>
+
+        <div class="fixed">
+            这是fixed。Hello！暂时不要太关注我哦。它相对于页面是固定的。
+        </div>
+
+        <div class="absolute">
+            这是absolute。这个元素是绝对定位的。它相对于它的父元素定位。
+        </div>
+
+
+
+
+    </body>
+</html>
