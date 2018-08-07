@@ -24,4 +24,4 @@ new Foo.getName(); //2
 
 new Foo().getName(); //3
 
-new new Foo().getName() //3
+new  new new Foo().getName() //3
