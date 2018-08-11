@@ -1,0 +1,53 @@
+.boxA{
+    width: 200px;
+    height: 200px;
+    border-top: 50px solid red;
+    border-right: 50px solid green;
+    border-bottom: 50px solid yellow;
+    border-left: 50px solid blue;         
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 100px;
+  }
+
+  .boxB{
+    width: 0px;
+    height: 0px;
+    border-top: 100px solid red;
+    border-right: 100px solid green;
+    border-bottom: 100px solid yellow;
+    border-left: 100px solid blue;
+  }
+
+
+  .noBorder-bottom-triangle{
+    width: 0px;
+    height: 0px;
+    border-top: 100px solid red;
+    border-right: 100px solid green;
+    border-left: 100px solid blue;
+}
+
+.noBorder-bottom-rectangle{
+    width: 200px;
+    height: 200px;
+    border-top: 50px solid red;
+    border-right: 50px solid green;
+    border-left: 50px solid blue;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 100px;
+}
+
+.triangleRed_twice{
+    width: 0px;
+    height: 0px;
+    border-top: 100px solid red;
+    border-left: 100px solid blue;
+}
+.triangleRed-left{
+    width: 0px;
+    height: 0px;
+    border-top: 100px solid red;
+    border-left: 100px solid transparent;
+}
