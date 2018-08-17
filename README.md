@@ -4,6 +4,8 @@
 
 > I will use a brach called dev to do the job. And then, I will merge the dev branch to master. Never operate the master branch directly. The master branch is just used for show the final edition. In the normal work, i will push my modification to dev branch
 
+---
+
 ## JavaScript
 
 - [closure](javascript/Doc/ScopeChain&Closure/closuer.md)
