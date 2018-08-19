@@ -1,0 +1,84 @@
+<html>
+<head>
+    <style rel="sheetstyle" type="text/css">
+        input{
+            margin:10px;
+            width: 100%;
+        }
+        textarea{
+            height: 400px;
+            width:400px;
+
+        }
+    </style>
+</head>
+<body>
+
+<input type="file" name="file" id="fileId" />
+<textarea name="content" id="contentId"></textarea>
+<img id="preview-img" />
+
+</body>
+
+<script type="text/javascript">
+
+window.onload = function(){
+    var chooseFile = document.getElementById('fileId');
+
+    var content = document.getElementById('contentId');
+    var image = document.getElementById("preview-img");
+
+    chooseFile.addEventListener("change", function(){
+         console.log(this.files[0]);
+        var file = this.files[0];
+        var reader = new FileReader();
+
+        if((file.type == "image/jpeg")||(file.type == "image/png")){
+            reader.onload = function(evt){
+                console.log(evt);
+                image.src = evt.target.result;
+            }
+            reader.readAsDataURL(file);
+        }else{
+                reader.readAsText(file, 'gbk');
+                // reader.readAsArrayBuffer(file);
+                // reader.readAsBinaryString(file);
+
+                reader.onloadstart = function(){
+                    console.log("load started, please wait...");
+                }
+
+                reader.onload = function(){
+                    console.log("load finished, please wait...");
+                };
+
+                reader.onprogress = function(){
+                    console.log("on progress, please wait...");
+                };
+
+                reader.onloadend = function(evt){
+                    // console.log(evt);
+                    if(evt.target.readyState == reader.DONE){
+                        content.innerText = evt.target.result;
+                    }
+                    //content.Value = evt.target.result;
+                };
+
+                reader.onerror = function(){
+                    console.log("sorry, load file failed...");
+                }
+
+        }
+
+    });
+
+
+
+
+
+};
+
+
+</script>
+
+</html>
