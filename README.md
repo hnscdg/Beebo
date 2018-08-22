@@ -6,6 +6,33 @@
 
 ---
 
+## 1. [JavaScript](javascript/README.md)
+
+> This part is used for display the technology of javascript. Click to see detail...
+
+## 2. [ES6](es6/README.md)
+
+## 3. [nodejs](nodejs/README.md)
+
+## 4. [angular](angular/README.md)
+
+## 5. [CSS](css/README.md)
+
+> This part is used for summary the css knowledge...
+
+## 6. [C#](C%23/README.md)
+
+> This part is user for show C# basic concept.
+
+## 7. [Internet](internet/README.md)
+
+> HTTP concerned
+
+## 8. [Emoji](emoji/README.md)
+
+---
+---
+
 ## JavaScript
 
 - [closure](javascript/Doc/ScopeChain&Closure/closuer.md)
