@@ -12,9 +12,9 @@
 
 ## 2. [ES6](es6/README.md)
 
-## 3. [nodejs](nodejs/README.md)
+## 3. [Nodejs](nodejs/README.md)
 
-## 4. [angular](angular/README.md)
+## 4. [Angular](angular/README.md)
 
 ## 5. [CSS](css/README.md)
 
