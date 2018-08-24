@@ -4,7 +4,8 @@
 
 - [ECMAScript 6简介](intro.md)
 
-- let 和 const 命令
+- [let 和 const 命令](let.md)
+
 - 变量的解构赋值
 - 字符串的扩展
 - 正则的扩展
