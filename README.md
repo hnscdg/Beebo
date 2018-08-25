@@ -2,7 +2,7 @@
 
 :mushroom: ***Description***
 
-> This repository is used to collect the web development technology Which I thought is worth to be arranged agian. For now, I will document the following files: `javascritp, es6, nodejs, angular, css, c#, datatabase, internet and emoji`. May be I will extend more later. In order to pratice how to use git, I will commit all my code to dev fristly, and then when condition satisfying, I will merge all the code to the master.
+> This repository is used to collect the web development technology Which I thought is worth to be arranged agian. For now, I will document the following files: `javascritp, es6, nodejs, angular, css, c#, datatabase, internet and emoji`. May be I will extend more later. In order to pratice how to use git, I will commit all my code to dev firstly, and then when condition satisfying, I will merge all the code to the master.
 
 <!-- 1. [JavaScript](javascript/README.md)
 
@@ -20,7 +20,7 @@
 
 8. [Emoji](emoji/README.md) -->
 
-| name | Address |
+| name | Href |
 | --- | --- |
 |javascript | [javascript](javascript/README.md)|
 | es6 | [es6](es6/README.md) |
