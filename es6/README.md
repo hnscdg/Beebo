@@ -1,6 +1,8 @@
 # ES6 acknowledge
 
-- [函数式编程](fp.md)
+> 本文选自 [阮一峰的github](http://es6.ruanyifeng.com/)
+
+![ECMAScript 6 Primer](http://es6.ruanyifeng.com/images/cover-3rd.jpg)
 
 - [ECMAScript 6简介](intro.md)
 
@@ -10,7 +12,9 @@
 - 字符串的扩展
 - 正则的扩展
 - 数值的扩展
+
 - [函数的扩展](function.md)
+
 - 数组的扩展
 - 对象的扩展
 - Symbol
