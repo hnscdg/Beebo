@@ -20,7 +20,7 @@
 
 8. [Emoji](emoji/README.md) -->
 
-| name | Href |
+| Name | Herf |
 | --- | --- |
 |javascript | [javascript](javascript/README.md)|
 | es6 | [es6](es6/README.md) |
