@@ -26,9 +26,10 @@
 - Generator 函数的语法
 - Generator 函数的异步应用
 - async 函数
-- Class 的基本语法
 
-- [Class 的继承](class.md)
+- [Class 的基本语法](class.md)
+
+- [Class 的继承](class-extends.md)
 
 - Decorator
 - Module 的语法
