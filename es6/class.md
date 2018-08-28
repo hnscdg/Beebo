@@ -196,7 +196,7 @@ class Point {
 }
 
 // 等同于
-class Point {
+  class Point {
   constructor() {}
 }
 ```
