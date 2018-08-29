@@ -32,8 +32,11 @@
 - [Class 的继承](class-extends.md)
 
 - Decorator
-- Module 的语法
-- Module 的加载实现
+
+- [Module 的语法](class.md)
+
+- [Module 的加载实现](class-extends.md)
+
 - 编程风格
 - 读懂规格
 - ArrayBuffer
