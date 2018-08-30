@@ -1,6 +1,7 @@
 # ES6 acknowledge
 
 > 本文选自 [阮一峰的github](http://es6.ruanyifeng.com/)
+> [es6 feature](es6features.md)
 
 ![ECMAScript 6 Primer](http://es6.ruanyifeng.com/images/cover-3rd.jpg)
 
