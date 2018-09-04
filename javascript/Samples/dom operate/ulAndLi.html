@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>查找点击的LI - JSRUN 驱动</title>
+
+</head>
+<body>
+<ul style="width:200px" id="football" onClick="iniEvent()">
+<li>皇马</li>
+<li>曼联</li>
+<li>切尔西</li>
+<li>巴萨</li>
+<li>Ac米兰</li>
+<li>国际米兰</li>
+</ul>
+<script type="application/javascript">
+function iniEvent() {
+ var ul = document.getElementById("football");
+ var lis = document.getElementsByTagName("li");
+ for (var i = 0; i < lis.length; i++) {
+
+  //鼠标经过事件
+  lis[i].onmouseover = function () {
+//    var ul = document.getElementById("football");
+//    var lis = document.getElementsByTagName("li");
+   for (var i = 0; i < lis.length; i++) {
+    var li = lis[i];
+    if (li == this) {
+     li.style.background = "red";
+    }
+    else {
+     li.style.background = "gray";
+    }
+   }
+  }
+
+  //鼠标单击事件
+  lis[i].onclick = function () {
+//    var ul = document.getElementById("football");
+//    var lis = document.getElementsByTagName("li");
+   for (var i = 0; i < lis.length; i++) {
+    var li = lis[i];
+    if (li == this) {
+     li.style.fontSize = "20px";
+    }
+    else {
+     li.style.fontSize = "16px";
+    }
+   }
+  }
+ }
+}
+//]]>
+</script>
+
+</body>
+</html>
+
