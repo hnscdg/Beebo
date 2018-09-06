@@ -1,6 +1,7 @@
 # ES6 acknowledge
 
 > 本文选自 [阮一峰的github](http://es6.ruanyifeng.com/)
+> [es6 feature](es6features.md)
 
 ![ECMAScript 6 Primer](http://es6.ruanyifeng.com/images/cover-3rd.jpg)
 
@@ -32,8 +33,11 @@
 - [Class 的继承](class-extends.md)
 
 - Decorator
-- Module 的语法
-- Module 的加载实现
+
+- [Module 的语法](class.md)
+
+- [Module 的加载实现](class-extends.md)
+
 - 编程风格
 - 读懂规格
 - ArrayBuffer
