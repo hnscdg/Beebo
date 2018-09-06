@@ -9,7 +9,8 @@ var bodyParser = require('body-parser');
 
 // 加载路由控制
 var indexRouter = require('./routes/index');
-// var usersRouter = require('./routes/users');
+var usersRouter = require('./routes/users');
+var userListRouter = require('./routes/userList');
 
 // 创建项目实例
 var app = express();
@@ -37,7 +38,18 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // 匹配路径和路由
 app.use('/', indexRouter);
-// app.use('/users', usersRouter);
+app.use('/users', usersRouter);
+app.use('/userlist', userListRouter);
+
+app.get('/deleteuser', function(req,res,next){
+  console.log("delete user page");
+  res.send("delete user");
+});
+
+app.get('/ab*cd', function(req,res){
+  console.log("/ab*cd GET request");
+  res.send("regREX");
+});
 
 // catch 404 and forward to error handler
 // 404错误处理
