@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="TodoList">
+    <head>
+        <title>Todo List</title>
+        <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">         -->
+        <link href="https://cdn.bootcss.com/bootstrap/4.1.1/css/bootstrap.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="container" ng-controller="TodosController">
+
+            <div class="todos list-group">
+                <div class="list-group-item todo" ng-repeat="todo in todos track by $index"
+                ng-controller="TodoController">
+                <span>{{todo.name}}</span>
+                <button type="button" class="close" aria-label="Close" ng-click="deleteTodo(todo)">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            </div>
+
+
+            <div class="input-group" ng-controller="AddTodoController">
+                <input type="text" class="form-controller" placeholder="New Todo" ng-model="newTodo">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" ng-click="addTodo(newTodo)">ADD</button>
+                </span>
+            </div>
+
+        </div>
+        <script src="https://cdn.bootcss.com/angular.js/1.7.0/angular.js"></script>
+        <script src="https://cdn.bootcss.com/lodash.js/4.17.10/lodash.js"></script>
+        <script type="text/javascript" src="index.js"> </script>
+    </body>
+
+</html>
