@@ -34,7 +34,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 // 定义静态文件目录
-app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static('public'));
 
 // 匹配路径和路由
 app.use('/', indexRouter);
