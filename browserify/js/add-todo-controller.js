@@ -1,4 +1,5 @@
-var addTodoController = ['$scope', function($scope){
+module.exports = ['$scope', function($scope){
+    
     $scope.newTodo = '';
     $scope.addTodo = function(newTodo){
         if(!newTodo){

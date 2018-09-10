@@ -1,4 +1,5 @@
-var todosController = ['$scope',function($scope){
+module.exports = ['$scope',function($scope){
+    
     $scope.setTodos =  function(todos){
         localStorage.setItem('todos', JSON.stringify(todos));
     }
