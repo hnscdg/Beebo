@@ -12,6 +12,7 @@
     "browserify": "^16.2.2",
     "gulp": "^3.9.1",
     "run-sequence": "^2.2.1",
-    "shelljs": "^0.8.2"
+    "shelljs": "^0.8.2",
+    "watchify": "^3.11.0"
   }
 }

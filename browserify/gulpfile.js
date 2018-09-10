@@ -3,15 +3,22 @@ var shelljs = require('shelljs');
 var browserify = require('browserify');
 var fs = require('fs');
 var sequence = require('run-sequence');
+var watchify = require('watchify');
 gulp.task('default', function(){
-    sequence('mainjs', 'watch');
+    sequence('mainjs');
 });
 
 gulp.task('mainjs', function(){
-    browserify().add('assets/js/index.js').bundle().pipe(fs.createWriteStream('main.js'));  
-});
-gulp.task('watch', function(){
-    gulp.watch(['assets/js/*.js'], function(){
-        sequence('mainjs');
+    var b = browserify({
+        entries:['assets/js/index.js'],
+        cache:{},
+        packageCache:{},
+        plugin: [watchify]
     });
-})
+
+    var bundle = function(){
+        b.bundle().pipe(fs.createWriteStream('main.js'));
+    };
+    bundle();
+    b.on('update', bundle);
+});

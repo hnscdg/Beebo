@@ -1,6 +1,6 @@
 module.exports = ['$scope', function($scope){
     
-    $scope.newTodo = ''; 
+    $scope.newTodo = '';    
     $scope.addTodo = function(newTodo){
         if(!newTodo){
             return;
