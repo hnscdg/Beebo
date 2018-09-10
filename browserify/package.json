@@ -9,6 +9,7 @@
   "author": "dgzhu",
   "license": "MIT",
   "dependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "shelljs": "^0.8.2"
   }
 }
