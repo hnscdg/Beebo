@@ -20,5 +20,5 @@ gulp.task('mainjs', function(){
         b.bundle().pipe(fs.createWriteStream('main.js'));
     };
     bundle();
-    b.on('update', bundle);
+    b.on('update', bundle); 
 });
