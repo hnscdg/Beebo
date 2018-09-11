@@ -4,6 +4,9 @@ var browserify = require('browserify');
 var fs = require('fs');
 var sequence = require('run-sequence');
 var watchify = require('watchify');
+var uglify = require('gulp-uglify');
+var source = require('vinyl-source-stream');
+var buffer = require('vinyl-buffer');
 gulp.task('default', function(){
     sequence('mainjs');
 });
@@ -17,7 +20,12 @@ gulp.task('mainjs', function(){
     });
 
     var bundle = function(){
-        b.bundle().pipe(fs.createWriteStream('main.js'));
+        b.
+        bundle()
+        .pipe(source('main.js'))
+        .pipe(buffer())
+        .pipe(uglify())
+        .pipe(gulp.dest('./'));
     };
     bundle();
     b.on('update', bundle); 
