@@ -7,6 +7,9 @@ var watchify = require('watchify');
 var uglify = require('gulp-uglify');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
+var gif = require('gulp-if');
+
+var isProduction = process.env.ENV === 'prod';
 gulp.task('default', function(){
     sequence('mainjs');
 });
@@ -24,7 +27,7 @@ gulp.task('mainjs', function(){
         bundle()
         .pipe(source('main.js'))
         .pipe(buffer())
-        .pipe(uglify())
+        .pipe(gif(isProduction, uglify()))
         .pipe(gulp.dest('./'));
     };
     bundle();
